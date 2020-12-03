@@ -33,7 +33,9 @@ This is the list of topics I have identified for further study and investigation
 | Advanced React Patterns |
 | React Performance |
 | Testing React Apps |
-| Introducing Web Accessibility | [Here](https://www.w3.org/WAI/gettingstarted/Overview) and [Here](https://www.w3.org/standards/webdesign/accessibility) | Active
+| Introducing Web Accessibility | [Here](https://www.w3.org/WAI/gettingstarted/Overview) and [Here](https://www.w3.org/standards/webdesign/accessibility) | Active | 
+| CSS Animations |
+| WebGL |
 
 ## Possible courses
 
