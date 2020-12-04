@@ -25,9 +25,8 @@ This is the list of topics I have identified for further study and investigation
 | :----------------- | :-----: | :----: |
 | Docker |  | Active |
 | Clean code and architecture |  | Active |
-| Continuous integration and deployment |
-| The basics of test automation |
-| Blockchain basics |
+| Continuous integration and deployment | Active |
+| The basics of test automation | Active |
 | PWA in depth |
 | Advanced React Hooks |
 | Advanced React Patterns |
