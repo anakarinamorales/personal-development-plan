@@ -150,7 +150,7 @@
     justify-content: center;
     left: 0;
     position: relative;
-    text-transform: capitalize;
+    text-transform: uppercase;
     top: 0;
     transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
     transition: 0.3s;
