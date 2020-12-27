@@ -1,0 +1,6 @@
+.DS_Store
+EpicReact/react-fundamentals/node_modules
+coverage
+build
+.idea/
+.vscode/

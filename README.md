@@ -67,7 +67,7 @@ These are generally shorter and lower cost courses.
 | Course | Provider | Cost | Certified | Started | Completed |
 | :----- | :------- | :-------- | :-------- | :------ | :-------- |
 | Understanding TypeScript - 2020 Edition | [Udemy](https://www.udemy.com/course/understanding-typescript/) | €9.99 | Yes |
-| Epic React | [Kent C. Dodds](https://epicreact.dev/) | $599 | Yes |
+| Epic React | [Kent C. Dodds](https://epicreact.dev/) | $599 | Yes | 27/12/2020 | - |
 | Vue - the complete guide  (w/ Router, Vuex, Composition API) | [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/) | €9.99 | Yes |
 
 ## Books for study
@@ -87,6 +87,6 @@ These are generally shorter and lower cost courses.
 
 ## Certifications, qualifications and achievements
 
-| Certification | Provider | Certificate | Achieved |
-| :------------ | :------- | :--------| :------: |
-| - | - | - | - |
+| Certification | Provider | Certificate | Price | Achieved |
+| :------------ | :------- | :---------: | :---: | :------: |
+| Contentful Certified Professional | Contentful | Yes | $250 |
