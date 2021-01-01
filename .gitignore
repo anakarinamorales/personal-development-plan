@@ -1,6 +1,9 @@
 .DS_Store
-EpicReact/react-fundamentals/node_modules
 coverage
 build
 .idea/
 .vscode/
+
+#EpicReact
+EpicReact/react-fundamentals/node_modules
+EpicReact/react-fundamentals/.eslintcache
