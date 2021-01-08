@@ -1,0 +1,122 @@
+.container {
+  align-items: center;
+  background-attachment: fixed;
+  background-color: #464646;
+  background-image: url('../../public/img/background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  background-color: #000000;
+  color: #ffffff;
+  display: block;
+  font-size: 4rem;
+  line-height: 1.15;
+  margin: 0;
+  padding: 2rem 0px;
+  width: 100vw;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  color: inherit;
+  flex-basis: 20%;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  border-color: #0070f3;
+  color: #0070f3;
+}
+
+.button h3 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.button p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.logo {
+  height: 1em;
+}
+
+.plumbus {
+  background-color: #24282f;
+  top: 17vh;
+  padding: 1.5em 0px;
+  position: relative;
+  width: 100vw;
+}
+
+.plumbus .call-to-action {
+  color: #9e9e9e;
+  text-align: center;
+  margin: 0px;
+}
+
+.plumbus .video {
+  margin: 1rem auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .grid {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .button {
+    font-size: 0.8rem;
+  }
+
+  .plumbus .video {
+    width: 95vw;
+  }
+}
