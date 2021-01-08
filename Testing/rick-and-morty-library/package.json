@@ -1,0 +1,46 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "eslint": "eslint \"**/*.{js,jsx}\"",
+    "stylelint": "stylelint \"**/*.scss\" --allow-empty-input",
+    "prettier": "prettier --check \"**/*.{js,jsx,json,md,mdx,css,yml,yaml,scss}\""
+  },
+  "dependencies": {
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "17.0.1",
+    "include-media": "^1.4.9",
+    "prop-types": "^15.7.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
