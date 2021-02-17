@@ -17,3 +17,12 @@
   width: 90px;
   height: 90px;
 }
+.bg--lightblue {
+  background-color: lightblue;
+}
+.bg--pink {
+  background-color: pink;
+}
+.bg--orange {
+  background-color: orange;
+}
