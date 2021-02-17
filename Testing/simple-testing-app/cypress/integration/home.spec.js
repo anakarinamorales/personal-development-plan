@@ -1,26 +1,33 @@
+// First adding Cypress as a reference type, which allows Cypress to find the file and know that it should use it to run a test
 /// <reference types="cypress" />
 
-context('Home', () => {
-    beforeEach(() => {
-        cy.visit('http://localhost:3000')
+// Creating a new context for our test and defining it as Home
+context("Home", () => {
+  // Telling Cypress that before each test, we want it to visit our homepage
+  beforeEach(() => {
+    cy.visit("http://localhost:3000");
+  });
+
+  // Defining a test that grabs the h1 and checks that it contains “Welcome”
+  it("Should navigate to the homepage at localhost and find the title of the page", () => {
+    cy.get("h1").contains("Welcome");
+  });
+
+  it("should veriry the homepage looks as expected", () => {
+    // First, we’re “opening the eyes” of Applitools, which will prepare the Eyes functionality to check our app
+    cy.eyesOpen({
+      appName: "My App",
+      testName: "Homepage Check",
     });
 
-    it('Should navigate to the homepage at localhost and find the title of the page', () => {
-        cy.get('h1').contains('Welcome');
+    // Next, we’re running a check on the window of our application, essentially capturing a screenshot of our app and sending it to Applitools
+    cy.eyesCheckWindow({
+      tag: "App Window",
+      target: "window",
+      fully: true,
     });
 
-    it('should veriry the homepage looks as expected', () => {
-        cy.eyesOpen({
-            appName: 'My App',
-            testName: 'Homepage Check'
-        });
-
-        cy.eyesCheckWindow({
-            tag: 'App Window',
-            target: 'window',
-            fully: true
-        });
-
-        cy.eyesClose();
-    });
+    // Finally, we “close the eyes” of Applitools, letting Eyes know that we’re running our checks
+    cy.eyesClose();
+  });
 });

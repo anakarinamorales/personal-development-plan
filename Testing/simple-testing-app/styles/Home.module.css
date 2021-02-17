@@ -36,7 +36,8 @@
 }
 
 .title a {
-  color: #0070f3;
+  /* color: #0070f3; */
+  color: #ddd;
   text-decoration: none;
 }
 
