@@ -1,0 +1,70 @@
+@import 'styles/colors';
+@import 'styles/media';
+
+.stickyHeader {
+    align-items: center;
+    background-color: $darkGreen;
+    display: flex;
+    flex-direction: column;
+    height: 195px;
+    justify-content: flex-start;
+    position: relative;
+    transition: all 0.8s ease;
+    width: 100%;
+
+    .pageTitle {
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 1.15em;
+        text-transform: uppercase;
+
+        @include media('>=desktop') {
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+
+    .logo {
+        display: block;
+        left: 50%;
+        position: absolute;
+        transition: all 0.8s ease;
+        width: 160px;
+
+        img {
+            display: block;
+            left: -50%;
+            position: relative;
+            width: 100%;
+        }
+    }
+}
+
+.shrinked {
+    height: 80px;
+    position: fixed;
+
+    @include media('>=tablet') {
+        height: 100px;
+    }
+
+    .pageTitle {
+        position: absolute;
+        right: 100vw;
+
+        @include media('>=tablet') {
+            position: initial;
+        }
+    }
+
+    .logo {
+        width: 70px;
+
+        @include media('>=tablet') {
+            width: 65px;
+        }
+    }
+}

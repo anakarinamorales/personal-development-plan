@@ -1,21 +1,17 @@
 import Head from 'next/head';
 
-import Home from '../components/Home/Home';
-
-import style from '../components/Home/home.module.css';
+import Home from 'components/Home/Home';
 
 function App() {
-  return (
-    <>
-      <Head>
-        <title>Rick and Morty Library</title>
-      </Head>
+    return (
+        <>
+            <Head>
+                <title>Rick and Morty Library</title>
+            </Head>
 
-      <main className={style.container}>
-        <Home />
-      </main>
-    </>
-  );
+            <Home />
+        </>
+    );
 }
 
 export default App;

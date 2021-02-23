@@ -1,0 +1,25 @@
+@import 'styles/colors';
+@import 'styles/media';
+
+.container {
+  color: $white;
+  align-items: center;
+  background-color: $darkGrey;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 195px);
+  justify-content: center;
+
+  &>span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+  }
+
+  @include media('>=tablet') {
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+}

@@ -1,10 +1,16 @@
 /* eslint-disable react/prop-types */
-import '../styles/global.css';
+import PageLayout from 'components/shared/PageLayout/PageLayout';
+
+import '../styles/global.scss';
 import 'normalize.css';
 
 export default function MyApp(props) {
-  const { Component, pageProps } = props;
+    const { Component, pageProps } = props;
 
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    return (
+        <PageLayout>
+            <Component {...pageProps} />
+        </PageLayout>
+    );
 }

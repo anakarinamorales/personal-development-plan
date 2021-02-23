@@ -1,0 +1,7 @@
+$breakpoints: (
+    'phone': 425px,
+    'tablet': 768px,
+    'desktop': 1440px
+);
+
+@import 'include-media/dist/_include-media.scss';

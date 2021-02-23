@@ -1,0 +1,58 @@
+@import 'styles/colors';
+
+.container {
+    background-color: transparent;
+    border: 2px solid $darkGreen;
+    color: $white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 224px;
+
+    &::before {
+        background-color: $darkGrey;
+        content: '';
+        height: calc(100% - 10px);
+        left: -2px;
+        position: absolute;
+        top: 5px;
+        transform: scaleY(1);
+        transition: all 0.5s ease-in-out;
+        width: calc(100% + 6px);
+    }
+
+    &::after {
+        background-color: $darkGrey;
+        content: '';
+        height: calc(100% + 10px);
+        left: 5px;
+        position: absolute;
+        top: -5px;
+        transform: scaleX(1);
+        transition: all 0.5s ease-in-out;
+        width: calc(100% - 10px);
+    }
+
+    &:hover {
+        font-weight: bold;
+        color: $darkGreen;
+
+        &::before {
+            transform: scaleY(0);
+        }
+
+        &::after {
+            transform: scaleX(0);
+        }
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
