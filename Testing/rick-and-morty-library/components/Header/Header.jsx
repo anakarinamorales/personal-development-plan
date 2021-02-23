@@ -2,20 +2,15 @@ import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 
-import style from './header.module.css';
+import {title, button} from './header.module.scss';
 
-const Header = (props) => {
-  const { title } = props;
+const Header = ( { title }) => {
   const router = useRouter();
 
   const header = (
     <>
-      <nav>
-        <Link href='/'><a>HOME</a></Link>
-      </nav>
-
-      <h1 className={style.title}>{title}</h1>
-      <button onClick={() => router.back()} className={style.button} type='button'>
+      <h1 className={title}>{title}</h1>
+      <button onClick={() => router.back()} className={button} type='button'>
         {'< BACK'}
       </button>
     </>

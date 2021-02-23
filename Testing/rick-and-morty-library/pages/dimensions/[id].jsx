@@ -5,11 +5,11 @@ import withApollo from '../../utils/withApollo';
 import queries from '../../utils/queries';
 
 // components
-import List from '../../components/List/List';
+// import List from '../../components/List/List';
 import Header from '../../components/Header/Header';
 
 // styles
-import listStyle from '../../components/List/list.module.css';
+// import listStyle from '../../components/List/list.module.css';
 
 function Dimensions(props) {
   const { id } = props;
@@ -36,13 +36,13 @@ function Dimensions(props) {
     <main className={listStyle.container}>
       <Header title={`Characters at ${id}`} />
 
-      <List container='div' data={characters} className={listStyle.grid}>
+      {/* <List container='div' data={characters} className={listStyle.grid}>
         {(childData) => (
           <Link href='/characters/[id]' as={`/characters/${childData.id}`}>
             <a className={listStyle.card}>{childData.name}</a>
           </Link>
         )}
-      </List>
+      </List> */}
     </main>
   );
 }

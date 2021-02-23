@@ -5,10 +5,10 @@ import { useQuery } from '@apollo/react-hooks';
 import withApollo from '../../utils/withApollo';
 import queries from '../../utils/queries';
 
-import List from '../../components/List/List';
+// import List from '../../components/List/List';
 import Header from '../../components/Header/Header';
 
-import listStyle from '../../components/List/list.module.css';
+// import listStyle from '../../components/List/list.module.css';
 
 function Locations(props) {
   const { id } = props;
@@ -41,13 +41,13 @@ function Locations(props) {
         to see all characters at this dimension.
       </span>
 
-      <List container='div' data={data.location.residents} className={listStyle.grid}>
+      {/* <List container='div' data={data.location.residents} className={listStyle.grid}>
         {(childData) => (
           <Link href='/characters/[id]' as={`/characters/${childData.id}`}>
             <a className={listStyle.card}>{childData.name}</a>
           </Link>
         )}
-      </List>
+      </List> */}
     </main>
   );
 }

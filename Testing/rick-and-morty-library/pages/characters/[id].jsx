@@ -25,7 +25,7 @@ function Characters(props) {
 
   return (
     <main>
-      <Header title={data.character.name} />
+      {/* <Header title={data.character.name} />
 
       <Card cardImage={data.character.image} cardTitle={data.character.name}>
         <p>
@@ -49,7 +49,8 @@ function Characters(props) {
         </p>
       </Card>
 
-      <Pokemon id={data.character.id} />
+      <Pokemon id={data.character.id} /> */}
+      <p>Test</p>
     </main>
   );
 }

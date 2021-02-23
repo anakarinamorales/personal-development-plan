@@ -1,3 +1,4 @@
 Add proptypes
 Remove css and add scss
 Remove unused packages
+Remove Title component
