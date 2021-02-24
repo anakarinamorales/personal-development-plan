@@ -24,14 +24,14 @@ This is the list of topics I have identified for further study and investigation
 | Topic              | Details | Status |
 | :----------------- | :-----: | :----: |
 | Docker |  | Active |
-| Clean code and architecture |  | Active |
+| Clean code and architecture | Read clean code book | Done |
 | Continuous integration and deployment | | Active |
 | The basics of test automation | | Active |
 | PWA in depth |
 | Advanced React Hooks |
 | Advanced React Patterns |
-| React Performance |
-| Testing React Apps |
+| React Performance | | Active |
+| Testing React Apps | | Active |
 | Introducing Web Accessibility | [Here](https://www.w3.org/WAI/gettingstarted/Overview), [Here](https://www.edx.org/course/html5-coding-essentials-and-best-practices) and [Here](https://www.w3.org/standards/webdesign/accessibility) | Active | 
 | CSS Animations | [Here](https://github.com/anakarinamorales/personal-development-plan/tree/main/Animations/CSS%20Buttons) | Active |
 | WebGL |
@@ -72,12 +72,12 @@ These are generally shorter and lower cost courses.
 
 ## Books for study
 
-| Book | Author | Area |
-| :--- | :----- | :--- |
-| ['Clean Code: A Handbook of Agile Software'](https://www.amazon.nl/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=clean+code&qid=1607035779&sr=8-1) |  C. Martin, Robert  | Software Development |
-| ['Computer Science Distilled: Learn the Art of Solving Computational Problems '](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316020) | Wladston Ferreira Filho | Computer Science and Algorithms |
+| Book | Author | Area | Read |
+| :--- | :----- | :--- | :--- |
+| ['Clean Code: A Handbook of Agile Software'](https://www.amazon.nl/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=clean+code&qid=1607035779&sr=8-1) |  C. Martin, Robert  | Software Development | ✓ |
+| ['Computer Science Distilled: Learn the Art of Solving Computational Problems '](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316020) | Wladston Ferreira Filho | Computer Science and Algorithms | ✓ |
 | ['The best interface is no interface: the simple path to brilliant technology'](https://www.amazon.nl/best-interface-simple-brilliant-technology/dp/0133890333/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Best+Interface+Is+No+Interface%3A+The+simple+path+to+brilliant+technology+%28Voices+That+Matter%29&qid=1607034541&sr=8-1) | Golden Krishna | Computer Systems Analysis & Design |
-| ['The Design of Everyday Things'](https://www.amazon.nl/Design-Everyday-Things-Don-Norman/dp/0465050654/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=design+of+everyday+things&qid=1607034758&sr=8-1) |  Don Norman | IHC |
+| ['The Design of Everyday Things'](https://www.amazon.nl/Design-Everyday-Things-Don-Norman/dp/0465050654/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=design+of+everyday+things&qid=1607034758&sr=8-1) |  Don Norman | IHC | ✓ |
 | ['Being Geek: The Software Developer's Career Handbook'](https://www.amazon.nl/Being-Geek-Software-Developers-Handbook/dp/0596155409/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Being+Geek%3A+The+Software+Developer%27s+Career+Handbook&qid=1607035113&sr=8-1) |  Michael Lopp | Business |
 | ['You don't know JS'](https://github.com/getify/You-Dont-Know-JS) | Kyle Simpson | Software Development |
 | ['Eloquent JavaScript: A Modern Introduction to Programming'](https://www.amazon.nl/Eloquent-Javascript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Eloquent+JavaScript&qid=1607035327&sr=8-1) |  Marijn Haverbeke  | Software Development |
