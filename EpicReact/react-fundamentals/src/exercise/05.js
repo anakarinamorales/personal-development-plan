@@ -27,10 +27,35 @@ import '../box-styles.css'
 //   )
 // }
 
-// 💯EXTRA CREDIT
-function Box({style, className, children}) {
+// 💯EXTRA CREDIT 1
+// function Box({style, className, children}) {
+//   return (
+//     <div className={`box ${className ? className : ''}`} style={style ? style : null}>
+//       {children}
+//     </div>
+//   )
+// }
+
+// function App() {
+//   return (
+//     <div>
+//       <Box style={{backgroundColor: 'lightblue'}} className="box--small">
+//         small lightblue box
+//       </Box>
+//       <Box style={{backgroundColor: 'pink'}} className="box--medium">
+//         medium pink box
+//       </Box>
+//       <Box style={{backgroundColor: 'orange'}} className="box--large">
+//         large orange cox
+//       </Box>
+//     </div>
+//   )
+// }
+
+// 💯EXTRA CREDIT 2
+function Box({style, size, children}) {
   return (
-    <div className={`box ${className ? className : ''}`} style={style ? style : null}>
+    <div className={`box ${size ? `box--${size}` : ''}`} style={style ? style : null}>
       {children}
     </div>
   )
@@ -39,13 +64,13 @@ function Box({style, className, children}) {
 function App() {
   return (
     <div>
-      <Box style={{backgroundColor: 'lightblue'}} className="box--small">
+      <Box style={{backgroundColor: 'lightblue'}} size="small">
         small lightblue box
       </Box>
-      <Box style={{backgroundColor: 'pink'}} className="box--medium">
+      <Box style={{backgroundColor: 'pink'}} size="medium">
         medium pink box
       </Box>
-      <Box style={{backgroundColor: 'orange'}} className="box--large">
+      <Box style={{backgroundColor: 'orange'}} size="large">
         large orange cox
       </Box>
     </div>

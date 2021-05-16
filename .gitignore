@@ -6,7 +6,8 @@ build
 
 #EpicReact
 EpicReact/react-fundamentals/node_modules
-EpicReact/react-fundamentals/.eslintcache
+/EpicReact/react-fundamentals/.eslintcache
+
 
 #Testing
 Testing/simple-testing-app/node_modules
