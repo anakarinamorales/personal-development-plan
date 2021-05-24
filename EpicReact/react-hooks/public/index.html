@@ -14,7 +14,7 @@
       // hide HRM logs because they're distracting
       const log = console.log
       console.log = (...args) =>
-        args[0]?.includes?.('[HMR]') ? null : log(...args)
+        args[0]?.includes?.('[HMR]') ? null : log(...args);
     </script>
   </head>
 

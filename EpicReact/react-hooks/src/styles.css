@@ -220,3 +220,7 @@ body[class*='6'] > iframe {
   border: none;
   background-color: transparent;
 }
+
+.final-container.render-container {
+  background: #19212a;
+}
