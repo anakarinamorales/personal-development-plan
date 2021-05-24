@@ -20,46 +20,105 @@ function UsernameForm({onSubmitUsername}) {
   // to do so, set the value of 'htmlFor' prop of the label to the id of input
 
   // EXERCISE 1
-//   const submitHandler = (evt) => {
-//     evt.preventDefault();
-//     const username = evt.target.elements[0].value;
+  //   const submitHandler = (evt) => {
+  //     evt.preventDefault();
+  //     const username = evt.target.elements[0].value;
 
-//     onSubmitUsername(username);
-//   };
+  //     onSubmitUsername(username);
+  //   };
 
-//   return (
-//     <form onSubmit={submitHandler}>
-//       <div>
-//         <label htmlFor="username">Username:</label>
-//         <input type="text" id="username" />
-//       </div>
-//       <button type="submit">Submit</button>
-//     </form>
-//   )
-// }
+  //   return (
+  //     <form onSubmit={submitHandler}>
+  //       <div>
+  //         <label htmlFor="username">Username:</label>
+  //         <input type="text" id="username" />
+  //       </div>
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   )
+  // }
 
-// function App() {
-//   const onSubmitUsername = username => alert(`You entered: ${username}`)
-//   return <UsernameForm onSubmitUsername={onSubmitUsername} />
-// }
+  // function App() {
+  //   const onSubmitUsername = username => alert(`You entered: ${username}`)
+  //   return <UsernameForm onSubmitUsername={onSubmitUsername} />
+  // }
 
   // 💯EXTRA CREDIT 1
-  const inputEl = React.useRef(null);
+  // const inputEl = React.useRef(null);
 
-  const submitHandler = (evt) => {
-    evt.preventDefault();
-    console.log(inputEl);
+  // const submitHandler = (evt) => {
+  //   evt.preventDefault();
+  //   console.log(inputEl);
 
-    const username = inputEl.current.value;
+  //   const username = inputEl.current.value;
 
-    onSubmitUsername(username);
-  };
+  //   onSubmitUsername(username);
+  // };
+
+  // return (
+  //   <form onSubmit={submitHandler}>
+  //     <div>
+  //       <label htmlFor="username">Username:</label>
+  //       <input type="text" id="username" ref={inputEl} />
+  //     </div>
+  //     <button type="submit">Submit</button>
+  //   </form>
+  // )
+
+  // 💯EXTRA CREDIT 2
+  const inputEl = React.useRef(null)
+  const errorMessage = React.useRef(null)
+  const [error, setError] = React.useState('')
+
+  const handleChange = evt => {
+    const value = evt.target.value
+    const hasError = value === value.toLowerCase()
+
+    // Approach 1
+    setError(
+      hasError
+        ? ''
+        : (errorMessage.current.innerText = 'Username must be lower case'),
+    )
+
+    //Approach 2
+    // setError(hasError ? '' : 'Username must be lower case');
+  }
+
+  const submitHandler = evt => {
+    evt.preventDefault()
+    console.log(inputEl)
+
+    const username = inputEl.current.value
+
+    onSubmitUsername(username)
+  }
 
   return (
     <form onSubmit={submitHandler}>
       <div>
         <label htmlFor="username">Username:</label>
-        <input type="text" id="username" ref={inputEl} />
+        <input
+          type="text"
+          id="username"
+          ref={inputEl}
+          onChange={handleChange}
+        />
+        <span
+          role="alert"
+          ref={errorMessage}
+          style={{color: 'red', display: 'block'}}
+        >
+          {error}
+        </span>
+
+        {/*
+        // Approach 2
+        {error && (
+          <span role="alert" style={{color: 'red', display: 'block'}}>
+            {error}
+          </span>
+        )} */}
       </div>
       <button type="submit">Submit</button>
     </form>
