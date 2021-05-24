@@ -66,24 +66,67 @@ function UsernameForm({onSubmitUsername}) {
   // )
 
   // 💯EXTRA CREDIT 2
+  // const inputEl = React.useRef(null)
+  // const errorMessage = React.useRef(null)
+  // const [error, setError] = React.useState('')
+
+  // const handleChange = evt => {
+  //   const value = evt.target.value
+  //   const hasError = value === value.toLowerCase()
+
+  //   // Approach 1
+  //   setError(
+  //     hasError
+  //       ? ''
+  //       : (errorMessage.current.innerText = 'Username must be lower case'),
+  //   )
+
+  //   //Approach 2
+  //   // setError(hasError ? '' : 'Username must be lower case');
+  // }
+
+  // const submitHandler = evt => {
+  //   evt.preventDefault()
+  //   console.log(inputEl)
+
+  //   const username = inputEl.current.value
+
+  //   onSubmitUsername(username)
+  // }
+
+  // return (
+  //   <form onSubmit={submitHandler}>
+  //     <div>
+  //       <label htmlFor="username">Username:</label>
+  //       <input
+  //         type="text"
+  //         id="username"
+  //         ref={inputEl}
+  //         onChange={handleChange}
+  //       />
+  //       <span
+  //         role="alert"
+  //         ref={errorMessage}
+  //         style={{color: 'red', display: 'block'}}
+  //       >
+  //         {error}
+  //       </span>
+
+  //       {/*
+  //       // Approach 2
+  //       {error && (
+  //         <span role="alert" style={{color: 'red', display: 'block'}}>
+  //           {error}
+  //         </span>
+  //       )} */}
+  //     </div>
+  //     <button type="submit">Submit</button>
+  //   </form>
+  // )
+
+  // 💯EXTRA CREDIT 3
   const inputEl = React.useRef(null)
-  const errorMessage = React.useRef(null)
-  const [error, setError] = React.useState('')
-
-  const handleChange = evt => {
-    const value = evt.target.value
-    const hasError = value === value.toLowerCase()
-
-    // Approach 1
-    setError(
-      hasError
-        ? ''
-        : (errorMessage.current.innerText = 'Username must be lower case'),
-    )
-
-    //Approach 2
-    // setError(hasError ? '' : 'Username must be lower case');
-  }
+  const [username, setUsername] = React.useState(null)
 
   const submitHandler = evt => {
     evt.preventDefault()
@@ -92,6 +135,10 @@ function UsernameForm({onSubmitUsername}) {
     const username = inputEl.current.value
 
     onSubmitUsername(username)
+  }
+
+  const handleChange = evt => {
+    setUsername(evt.target.value.toLowerCase())
   }
 
   return (
@@ -103,22 +150,8 @@ function UsernameForm({onSubmitUsername}) {
           id="username"
           ref={inputEl}
           onChange={handleChange}
+          value={username}
         />
-        <span
-          role="alert"
-          ref={errorMessage}
-          style={{color: 'red', display: 'block'}}
-        >
-          {error}
-        </span>
-
-        {/*
-        // Approach 2
-        {error && (
-          <span role="alert" style={{color: 'red', display: 'block'}}>
-            {error}
-          </span>
-        )} */}
       </div>
       <button type="submit">Submit</button>
     </form>
